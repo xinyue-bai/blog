@@ -1,10 +1,10 @@
 ---
-title: "Welcome to IDEA"
+title: "Welcome"
 description: |
-  Welcome to our new blog, IDEA. We hope you enjoy 
-  reading what we have to say!
+  Welcome to my new blog for data visualisation. Hope you enjoy 
+  reading what I have to say!
 author:
-  - name: MS. Bai Xinyue
+  - name: Bai Xinyue
     url: https://www.linkedin.com/in/theabai/
     affiliation: School of Information Systems, Singapore Management University 
     affiliation_url: https://github.com/xinyue-bai

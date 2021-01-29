@@ -6,10 +6,22 @@ author:
   - name: Bai Xinyue
     url: 
 date: 01-28-2021
+categories:
+  - DataViz Makeover
 output:
   distill::distill_article:
     self_contained: TRUE
+    toc: true
+    theme: united
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
 
 **Data Visualisation Link (Tableau Public)** - https://public.tableau.com/profile/xinyue.bai#!/vizhome/DataVizMakeover1_16118346604830/Dashboard1?publish=yes 
 

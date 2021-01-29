@@ -1,7 +1,7 @@
 ---
-title: "About this blog"
+title: "About Me"
 description: |
-  Some additional details about the blog
+  Hi I am a master student at Singapore Management University, majoring in IT in business.
 ---
 
 ```{r setup, include=FALSE}

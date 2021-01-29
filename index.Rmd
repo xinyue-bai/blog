@@ -1,5 +1,5 @@
 ---
-title: "IDEA"
+title: "Hi! This is Xinyue (Thea)!"
 site: distill::distill_website
 listing: posts
 ---
