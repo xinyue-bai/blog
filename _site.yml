@@ -1,7 +1,7 @@
 name: "blog"
-title: "IDEA"
+title: "Xinyue's Blog"
 description: |
-  IDEA
+  Hi! This is Xinyue (Thea)!
 output_dir: "_site"
 navbar:
   right:
