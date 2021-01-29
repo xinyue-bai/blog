@@ -26,7 +26,11 @@ knitr::opts_chunk$set(echo = FALSE)
 **Data Visualisation Link (Tableau Public)** - https://public.tableau.com/profile/xinyue.bai#!/vizhome/DataVizMakeover1_16118346604830/Dashboard1?publish=yes 
 
 # **1. Critiques and Suggestions**
-![](problems.png)
+```{r critiques, echo=FALSE, out.width="150%"}
+library(knitr)
+knitr::include_graphics("problems.png")
+```
+
 ```{r include=FALSE}
 library(knitr)
 library(dplyr)
