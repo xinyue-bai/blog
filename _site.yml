@@ -8,13 +8,11 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "DataViz Makeover"
-      href: dataviz.html
+      menu:
+        - text: "DataViz Makeover 1"
+          href: posts/2021-01-28-dataviz-makeover-1/index.html
     - text: "Visual Analytics Project"
       href: vap.html
     - text: "About"
       href: about.html
-rss:
-  full_content: true
-  categories:
-    - DataViz Makeover
 output: distill::distill_article

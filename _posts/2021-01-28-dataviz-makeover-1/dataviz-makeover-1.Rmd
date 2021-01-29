@@ -32,7 +32,6 @@ knitr::include_graphics("problems.png")
 ```
 
 ```{r include=FALSE}
-library(knitr)
 library(dplyr)
 library(kableExtra)
 library(pander)
