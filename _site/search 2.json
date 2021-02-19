@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About Me",
+      "description": "Hi I am a master student at Singapore Management University, majoring in IT in business.",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-02-20T00:29:39+08:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Hi! This is Xinyue (Thea)!",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-02-20T00:29:43+08:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
