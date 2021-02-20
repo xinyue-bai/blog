@@ -1,5 +1,6 @@
 name: "Blog"
 title: "Xinyue's Blog"
+base_url: https://github.com/xinyue-bai/blog/tree/master/_site
 description: |
   Hi! This is Xinyue (Thea)!
 output_dir: "_site"
