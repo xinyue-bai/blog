@@ -233,8 +233,6 @@ kable(aesthetic,type='html', align='l') %>%
 12. Sort rows according to % of strongly agree. \
 ![Figure 73: sort data](sort rows.png)
 13. Change the color for 95% and 99% confidence interval according to your own preference, change axis's number format and add tick marks. Detailed procedures are described in the **visualisation 1**. \
-14. Final look of **visualisation 2**. \ 
-![Figure 74: visualisation 2 final look](final look.png){width=95%}
 
 ### 4.2.3 Visualisation 3
 1. Open a new worksheet. \
@@ -254,8 +252,6 @@ kable(aesthetic,type='html', align='l') %>%
 7. Drag **Country** to **Label** and highlist points wiht minimum % of strongly agree 2.1/2.2 and maximum % of strongly agree 2.1/2.2. \
 -  ![Figure 87: add highlight 2.1](highlight 2.1.png) \
 8. Change axis's number format and add tick marks. Detailed procedures are described in the **visualisation 1**. \
-9. Final look of **visualisation 3**. \ 
-![Figure 89: final look v3](final look v3.png)
 
 ### 4.2.4 Visualisation 4
 1. Open a new worksheet. \
@@ -275,8 +271,7 @@ kable(aesthetic,type='html', align='l') %>%
 ![Figure 99: final look v4](final look v4.png){width=95%}
 
 ### 4.2.5 Visualisation 5
-Same procedure as visualisation 4, except using **Prop of strongly agree - vac2.2** instead of **Prop of strongly agree - vac2.1**. Final look of **visualisation 5**: \
-![Figure 100: final look v5](final look v5.png){width=95%}
+Same procedure as visualisation 4, except using **Prop of strongly agree - vac2.2** instead of **Prop of strongly agree - vac2.1**.
 
 ### 4.2.6 Visualisation 6
 1. Open a new worksheet. \
@@ -296,8 +291,7 @@ Same procedure as visualisation 4, except using **Prop of strongly agree - vac2.
 ![Figure 107: final look v6](final look v6.png)
 
 ### 4.2.7 Visualisation 7
-Same procedure as visualisation 4, except using **gender** instead of **employment_status**. Final look of **visualisation 7**: \
-![Figure 108: final look v7](final look v7.png){width=50%}
+Same procedure as visualisation 4, except using **gender** instead of **employment_status**.
 
 ### Add Tooltip on Visualisation 1 & 2
 1. In the visualisation 1, click **Tooltip** under the **Marks**, select the sheets you want to add. \
@@ -342,11 +336,14 @@ Same procedure as visualisation 4, except using **gender** instead of **employme
 \
 ![Figure 126: ob 4](ob 4.png)
 4. The survey results is overall reliable, with a narrow confidence interval for all countries. Netherlands has a relatively larger CI range, but it's acceptable. \
-\
-![Figure 127: ob - K](ob - K.png){witdth=50%}
-![Figure 128: ob - J](ob - J.png){witdth=50%} 
-![Figure 129: ob - S](ob - S.png){witdth=50%} 
+
+```{r ob, echo=FALSE, out.width="50%"}
+knitr::include_graphics("ob - K.png")
+knitr::include_graphics("ob - J.png")
+knitr::include_graphics("ob - S.png")
+```
+
 5. By looking into the results of more developed economies in Asia, Japan, Singapore and South korea, we can see that full-time employed respondents are more willing to get vaccination in all three countries, compared to other employment status. \
 \
-![Figure 130: ob - F](ob - F.png){witdth=60%} \
+![Figure 130: ob - F](ob - F.png){witdth=30%} \
 6. French respondents show the least interest in getting vaccinated, which could possibly be explained by the fear of potential side effect of COVID vaccine as almost half of respondents(44%) strongly worry about the side effect.
