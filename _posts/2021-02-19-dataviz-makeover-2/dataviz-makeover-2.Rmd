@@ -40,7 +40,6 @@ knitr::include_graphics("problem.png")
 ```{r include=FALSE}
 library(dplyr)
 library(kableExtra)
-library(pander)
 ```
 
 ### 2.1 Clarity
@@ -118,11 +117,9 @@ kable(aesthetic,type='html', align='l') %>%
 ![Figure 7: edit aliases before](edit aliases before.png)
 ![Figure 8: edit aliases after](edit aliases after.png)
 5. Rename new column as **vac1_score**.
-![Figure 9: rename new column](rename column.png)
 6. Click on **"=Abc"** symbol and change its data type to **Number(whole)**.
 ![Figure 10: change column's data type](change data type.png)
 7. Rename **Table Name** as **Country**.
-![Figure 11: rename table name](Country.png)
 
 ### 4.2 Creating Visualisation
 ### 4.2.1 Visualisation 1
@@ -146,7 +143,6 @@ kable(aesthetic,type='html', align='l') %>%
     ![Figure 19: Gantt Percentage](Gantt Percentage.png)
     
 4. Drag **Country** to **Rows**, **Grantt Percentage** to **Columns**, **vac1_score** to **Detail** and **Color** \
-![Figure 20: after drag](after drag.png){width=90%}
 
 5. Gantt Percentage, click on the triangle button -> Compute Using -> **vac1_score**\
 ![Figure 21: change gantt percentage's compute using](Compute using score.png)
@@ -157,12 +153,9 @@ kable(aesthetic,type='html', align='l') %>%
 -  ![Figure 24: sort part 2](sort 2.png){width=50%} \
 -  Before sort: ![Figure 25: before sort](before sort.png){width=50%} \
 -  After sort: ![Figure 26: after sort](after sort.png){width=50%} \
--  Final look of legend after sort: ![Figure 27: sort final](sort final.png){width=50%} \
 8. Change chart type from Automatic to **Gantt Bar** \
 ![Figure 28: change to gantt bar](change to gantt bar.png)
-
 9. Drag **Percentage - Vac1** to **Size** and **Label**.\
-![Figure 29: size and label](size and label.png){width=110%}
 10. Adjust label's alignment. \
 ![Figure 30: adjust label alignment](adjust label alignment.png)
 
@@ -171,7 +164,6 @@ kable(aesthetic,type='html', align='l') %>%
 -  ![Figure 32: change label's format to percentage part 2](change label's format to percentage.png)
 12. Similarly, right click on the x-axis and choose format, change axis's value format to **Percentage** and add tick marks.\
 -  ![Figure 33: change axis's value format to percentage part 1](axis's format 1.png) \
--  Change number format: ![Figure 34: change axis's value format to percentage part 2](axis's format 2.png) \
 -  Add tick marks: ![Figure 35: change axis's value format to percentage part 3](axis format 3.png)
 13. Change **color** of the gantt bar. What it displays here is already the color I wanted. Red color represents anti-vaccine responses and green color represents pro-vaccine responses. Also, darker color implies more extreme responses (e.g. strongly agree and strongly disagree).\
 ![Figure 36: change color of gantt bar](change color.png){width=90%}
@@ -227,8 +219,7 @@ kable(aesthetic,type='html', align='l') %>%
 7. Drag **Measure Names** to path under **Measure Values** section. \
 ![Figure 63: drag measure values to path](mv to path.png)
 8. Click on **Measure Names (Detail)** under **Measure Values** section and **Prop of strongly agree - vac1** section, change it to **Color**. \
--  ![Figure 64: add color legend part 1](add color legend 1.png) \
--  ![Figure 65: add color legend part 2](add color legend 2.png)
+-  ![Figure 64: add color legend part 1](add color legend 1.png)
 9. Change columns order, put Measure Values before Prop of strongly agree - vac1 and right click on the top x-axis -> **synchronize axis**. \ 
 -  ![Figure 66: change columns order](change columns order.png) \
 -  ![Figure 67: synchronize axis](synchronize axis.png)
@@ -255,12 +246,10 @@ kable(aesthetic,type='html', align='l') %>%
     -  **Number of Strongly agree - Vac2.1**, **Number of Strongly agree - Vac2.2**
     -  **Prop of strongly agree - vac2.1**, **Prop of strongly agree - vac2.2**
 3. Drag **Prop of strongly agree - vac1** to Columns, **Prop of strongly agree - vac2.1** and **Prop of strongly agree - vac2.2** to Rows, also drag **Country** to **Detail** under **All** section. \
-![Figure 83: after drag v3](after drag v3.png)
 4. Drag **Measure Names** to **Filters** and only tick **Prop of strongly agree - vac2.1** and **Prop of strongly agree - vac2.2**. \
 ![Figure 84: mn to filter](mn to filter.png)
 5. Drag **Measure Names** to **Color** under **All** section.\
-![Figure 85: add color](add color.png)
-6. Add two trendlines.\
+6. Right click on the pane to add two trendlines.\
 ![Figure 86: add trendline](add trendline.png)
 7. Drag **Country** to **Label** and highlist points wiht minimum % of strongly agree 2.1/2.2 and maximum % of strongly agree 2.1/2.2. \
 -  ![Figure 87: add highlight 2.1](highlight 2.1.png) \
@@ -280,8 +269,7 @@ kable(aesthetic,type='html', align='l') %>%
 5. Drag **Country** to **Label** under **Prop of strongly agree - vac2.1 (Circle)** section and click on Label to just its **Alignment**. \
 ![Figure 96: add label](add label.png) 
 6. Change the label format to **Percentage**. \
--  ![Figure 97: label format 1](label format 1.png) \
--  ![Figure 98: label format 2](label format 2.png)
+-  ![Figure 97: label format 1](label format 1.png)
 7. Sort rows according to % of strongly agree - vac2.1, change axis's number format and range, add tick marks. Detailed procedures are described in the **visualisation 1**. \
 8. Final look of **visualisation 4**. \ 
 ![Figure 99: final look v4](final look v4.png){width=95%}
@@ -297,7 +285,6 @@ Same procedure as visualisation 4, except using **Prop of strongly agree - vac2.
 3. Right click on the bottom y axis to make the plot into dual axis. \
 ![Figure 102: dual axis v6](dual axis v6.png)
 4. Exclude Null employment status. \
-![Figure 103: exclude null es](exclude null es.png)
 5. Change one of the **vac1_score** representation to **Line**. \
 ![Figure 104: change to line v5](change to line v5.png)
 6. Drag **vac1_score** to **Label** under the **circle** representation and modify it into **count**. \
@@ -305,12 +292,12 @@ Same procedure as visualisation 4, except using **Prop of strongly agree - vac2.
 7. Apply **Quick Table Calculation - Percent of Total** to all three **CNT(vac1_score)**. \
 ![Figure 106: % of total](% of total.png)
 8. Keep only one y-axis, change the name of y-axis. Detailed procedures are described in the previous visualisation. \
-8. Final look of **visualisation 6**. \
+9. Final look of **visualisation 6**. \
 ![Figure 107: final look v6](final look v6.png)
 
 ### 4.2.7 Visualisation 7
 Same procedure as visualisation 4, except using **gender** instead of **employment_status**. Final look of **visualisation 7**: \
-![Figure 108: final look v7](final look v7.png)
+![Figure 108: final look v7](final look v7.png){width=50%}
 
 ### Add Tooltip on Visualisation 1 & 2
 1. In the visualisation 1, click **Tooltip** under the **Marks**, select the sheets you want to add. \
@@ -356,10 +343,10 @@ Same procedure as visualisation 4, except using **gender** instead of **employme
 ![Figure 126: ob 4](ob 4.png)
 4. The survey results is overall reliable, with a narrow confidence interval for all countries. Netherlands has a relatively larger CI range, but it's acceptable. \
 \
-![Figure 127: ob - K](ob - K.png){witdth=90%} \
-![Figure 128: ob - J](ob - J.png){witdth=90%} \
-![Figure 129: ob - S](ob - S.png){witdth=90%} \
+![Figure 127: ob - K](ob - K.png){witdth=50%}
+![Figure 128: ob - J](ob - J.png){witdth=50%} 
+![Figure 129: ob - S](ob - S.png){witdth=50%} 
 5. By looking into the results of more developed economies in Asia, Japan, Singapore and South korea, we can see that full-time employed respondents are more willing to get vaccination in all three countries, compared to other employment status. \
 \
-![Figure 130: ob - F](ob - F.png) \
+![Figure 130: ob - F](ob - F.png){witdth=60%} \
 6. French respondents show the least interest in getting vaccinated, which could possibly be explained by the fear of potential side effect of COVID vaccine as almost half of respondents(44%) strongly worry about the side effect.
