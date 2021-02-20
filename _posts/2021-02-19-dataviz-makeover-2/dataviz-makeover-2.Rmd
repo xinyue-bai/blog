@@ -357,7 +357,7 @@ Same procedure as visualisation 4, except using **gender** instead of **employme
 7. Final look: \
 ![Figure 122: dashboard 8](dashboard 8.png){width=95%}
 
-### 5. Major Observations
+## 5. Major Observations
 ![Figure 123: ob 1](ob 1.png) \
 ![Figure 124: ob 2](ob 2.png)
 ![Figure 124: ob 7](ob 7.png)
