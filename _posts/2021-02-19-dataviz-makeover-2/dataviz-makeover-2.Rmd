@@ -114,8 +114,8 @@ kable(aesthetic,type='html', align='l') %>%
 ![Figure 5: custom split](custom split 2.png)
 4. Edit aliases for new column created (i.e. vac_1 - Split 1), 1 -> **1 - Strongly**, 2 -> **2 - Agree**, 3 -> **3 - I don't know**, 4 -> **4 - Disagree**, 5 -> **5 - Strongly disagree**.
 ![Figure 6: custom split](custom split 3.png)
-![Figure 7: edit aliases before](edit aliases before.png)
-![Figure 8: edit aliases after](edit aliases after.png)
+![Figure 7: edit aliases before](edit1.png)
+![Figure 8: edit aliases after](edit2.png)
 5. Rename new column as **vac1_score**.
 6. Click on **"=Abc"** symbol and change its data type to **Number(whole)**.
 ![Figure 10: change column's data type](change data type.png)

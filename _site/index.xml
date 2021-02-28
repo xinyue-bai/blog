@@ -2,39 +2,48 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
     <title>Xinyue's Blog</title>
-    <link>https://github.com/xinyue-bai/blog/tree/master/_site</link>
-    <atom:link href="https://github.com/xinyue-bai/blog/tree/master/_site/index.xml" rel="self" type="application/rss+xml"/>
+    <link>https://flamboyant-meninsky-d13fd9.netlify.app/</link>
+    <atom:link href="https://flamboyant-meninsky-d13fd9.netlify.app/index.xml" rel="self" type="application/rss+xml"/>
     <description>Hi! This is Xinyue (Thea)!
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 19 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Group project proposal: data visualization survey analysis</title>
+      <dc:creator>Bai Xinyue, Li Hongtng, Zhang Weimin</dc:creator>
+      <link>https://flamboyant-meninsky-d13fd9.netlify.app/posts/2021-02-28-group-project-proposal-data-visualization-survey-analysis</link>
+      <description>Group project proposal: data visualization survey analysis</description>
+      <guid>https://flamboyant-meninsky-d13fd9.netlify.app/posts/2021-02-28-group-project-proposal-data-visualization-survey-analysis</guid>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://flamboyant-meninsky-d13fd9.netlify.app/posts/2021-02-28-group-project-proposal-data-visualization-survey-analysis/1.png" medium="image" type="image/png" width="928" height="616"/>
+    </item>
     <item>
       <title>DataViz Makeover 2</title>
       <dc:creator>Bai Xinyue</dc:creator>
-      <link>https://github.com/xinyue-bai/blog/tree/master/_site/posts/2021-02-19-dataviz-makeover-2</link>
+      <link>https://flamboyant-meninsky-d13fd9.netlify.app/posts/2021-02-19-dataviz-makeover-2</link>
       <description>Dive deeper into survey results of public's willingness on Covid-19 vaccination.</description>
       <category>DataViz Makeover</category>
-      <guid>https://github.com/xinyue-bai/blog/tree/master/_site/posts/2021-02-19-dataviz-makeover-2</guid>
+      <guid>https://flamboyant-meninsky-d13fd9.netlify.app/posts/2021-02-19-dataviz-makeover-2</guid>
       <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/xinyue-bai/blog/tree/master/_site/posts/2021-02-19-dataviz-makeover-2/distill-preview.png" medium="image" type="image/png" width="923" height="387"/>
+      <media:content url="https://flamboyant-meninsky-d13fd9.netlify.app/posts/2021-02-19-dataviz-makeover-2/distill-preview.png" medium="image" type="image/png" width="923" height="387"/>
     </item>
     <item>
       <title>DataViz Makeover 1</title>
       <dc:creator>Bai Xinyue</dc:creator>
-      <link>https://github.com/xinyue-bai/blog/tree/master/_site/posts/2021-01-28-dataviz-makeover-1</link>
+      <link>https://flamboyant-meninsky-d13fd9.netlify.app/posts/2021-01-28-dataviz-makeover-1</link>
       <description>Resident Labour Force by Age Group, comparison between 2009 and 2019.</description>
       <category>DataViz Makeover</category>
-      <guid>https://github.com/xinyue-bai/blog/tree/master/_site/posts/2021-01-28-dataviz-makeover-1</guid>
+      <guid>https://flamboyant-meninsky-d13fd9.netlify.app/posts/2021-01-28-dataviz-makeover-1</guid>
       <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/xinyue-bai/blog/tree/master/_site/posts/2021-01-28-dataviz-makeover-1/distill-preview.png" medium="image" type="image/png" width="1093" height="565"/>
+      <media:content url="https://flamboyant-meninsky-d13fd9.netlify.app/posts/2021-01-28-dataviz-makeover-1/distill-preview.png" medium="image" type="image/png" width="1093" height="565"/>
     </item>
     <item>
       <title>Welcome</title>
       <dc:creator>Bai Xinyue</dc:creator>
-      <link>https://github.com/xinyue-bai/blog/tree/master/_site/posts/welcome</link>
+      <link>https://flamboyant-meninsky-d13fd9.netlify.app/posts/welcome</link>
       <description>Welcome to my new blog for data visualisation. Hope you enjoy 
 reading what I have to say!</description>
-      <guid>https://github.com/xinyue-bai/blog/tree/master/_site/posts/welcome</guid>
+      <guid>https://flamboyant-meninsky-d13fd9.netlify.app/posts/welcome</guid>
       <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
     </item>
   </channel>

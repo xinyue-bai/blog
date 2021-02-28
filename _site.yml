@@ -1,6 +1,6 @@
 name: "Blog"
 title: "Xinyue's Blog"
-base_url: https://github.com/xinyue-bai/blog/tree/master/_site
+base_url: https://flamboyant-meninsky-d13fd9.netlify.app/
 description: |
   Hi! This is Xinyue (Thea)!
 output_dir: "_site"
