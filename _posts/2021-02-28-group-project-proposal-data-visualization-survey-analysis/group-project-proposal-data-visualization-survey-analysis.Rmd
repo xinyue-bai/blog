@@ -14,17 +14,19 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# 1. Introduction 
+# 1. Introduction and Motivation
 
-Data visualization is the graphical representation of information and data. It has been an important factor in data analytics pipeline to reveal insights that might be difficult to be delivered by other forms. It helps operations and management to make informative decisions.  
+Data visualization is the graphical representation of information and data. It has been an important factor in data analytics pipeline, to reveal insights that are often difficult to be delivered in other forms. It is commonly used in various scenarios, such as data cleaning, exploring data structure, detecting pattern, identifying trends and clusters. It helps operations and management make informative decisions. Understanding the current state of data visualization is crucial. It gives organizations and practitioners in the field a better idea of where data visualization stands today, and where it’s headed.  
 
-To know how to efficiently utilize data visualization and generate insights from them, organizations might want to understand who the data visualization professionals are, how they work and what the data visualization is used for.   
+Collected and organized by Data Visualization Society, Annual Data visualization Community Survey includes 50+ data visualization related questions and covers data visualization details such as salary, tool use, demographic data, audiences and organizational structure. By analyzing the survey results, it can help organizations know who the data visualization professionals are and how they work. On the other hand, it helps people who have an interest in data visualization know how to enter the field.    
 
  
 
-# 2.Motivation and objectives 
+# 2.Objectives 
 
-In this research study, we aim to build up a r shiny application that allow users to analyse survey data and present data visualization. The analysis and visualization consist of three parts: exploratory data analysis, clustering and association analysis.  
+In this research study, we will build a R Shiny application to illustrate the current state of data visualization. The goal is to draw a comprehensive picture of data visualization for organizations, practitioners and people having an interest in data visualization, by analyzing Annual Data visualization Community Survey.  
+
+The analysis and visualization consist of three parts: exploratory data analysis, respondents clustering and association analysis.  
 
 -  The exploratory data analysis aims to summarize the main characteristics of the measures and generate statistical graphics to visualize them.  
 
@@ -34,7 +36,7 @@ In this research study, we aim to build up a r shiny application that allow user
 
 # 3. About the Data 
 
-The data was collected through the Annual Data Visualization Community Survey for 2019 run by the Data Visualization Society. It has responses to 50+ questions and was taken by over 1,350 people. It covers professional data visualization details like salary, tool used, demographic data, challenges faced and where the practice headed.  We classify the dataset into different categories, challenge, demographics, job, learning and tool. Below is a snippet of our dataset. Data source can be found from: https://github.com/data-visualization-society/data_visualization_survey. 
+The Annual Data Visualization Community Survey 2019 will be used for this project. This dataset includes responses from 1350 people. We classify the dataset into 5 different categories, challenges people face, demographics data, job-related, learning-related and tool-related questions. Below is a snippet of our dataset. Data source can be found from: https://github.com/data-visualization-society/data_visualization_survey.  
 
 ```{r 1, echo=FALSE, out.width="150%", fig.cap="Survey content and category"}
 library(knitr)
