@@ -16,7 +16,9 @@ navbar:
         - text: "DataViz Makeover 3"
           href: posts/2021-03-21-dataviz-makeover-3/index.html
     - text: "Visual Analytics Project"
-      href: vap.html
+      menu:
+        - text: "Group Project Proposal"
+          href: posts/2021-02-28-group-project-proposal-data-visualization-survey-analysis/index.html
     - text: "About"
       href: about.html
 output: distill::distill_article
