@@ -260,17 +260,24 @@ hovering over the points.\
 -  ![Figure 57](image57.png)
 
 ## 5. Major Observations
-1.  As we can see from the event density map, Shan province in Myanmar has the highest number of political conflicts between 2015-2020 and 63% of events in Shan are battles. By jumping to the Temporal Analysis Dashboard and select Shan, battles occurred most frequently in 2015, between state forces and rebel groups, resulting in more than 800 fatalities.
+1.  As we can see from the event density map, Shan province in Myanmar has the highest number of political conflicts between 2015-2020 and 63% of events in Shan are battles. By jumping to the Temporal Analysis Dashboard and select Shan, battles occurred most frequently in 2015, between state forces and rebel groups, resulting in more than 800 fatalities.\
 
 -  ![Figure 59](image59.png)
 -  ![Figure 60](image60.png)
 -  ![Figure 61](image61.png)
 -  ![Figure 62](image62.png)
-2.  As we can see from the temporal heat map, the number of protests (1-sided protest) has been increasing over the years. By looking into spatial dashboard, the majority of protests took place in Jakarta. 
+2.  As we can see from the temporal heat map, the number of protests (1-sided protest) has been increasing over the years. By looking into spatial dashboard, the majority of protests took place in Jakarta. \
 
 -  ![Figure 63](image63.png)
 -  ![Figure 64](image64.png){width=110%}
-3.  Although the number of protests is relatively high compared to other type of events, fatalities of protests are generally low. Violence against civilians occurred frequently between 2015 - 2020 and its fatalities are also high, peaking at 3569 in 2016.
+3.  Although the number of protests is relatively high compared to other type of events, fatalities of protests are generally low, whereas violence against civilians occurred frequently between 2015 - 2020 and its fatalities are also high, peaking at 3569 in 2016.
 ![Figure 65](image65.png)
-4.  Armed conflict between rebel groups and protestors, political militias and identity militias, identity militias and rioters, identity militias and external forces, protestors and civilians are very rare.
+4.  Armed conflicts between rebel groups and protestors, political militias and identity militias, identity militias and rioters, identity militias and external forces, protestors and civilians are very rare.
 ![Figure 66](image66.png)
+5.  Philippine and Myanmar account for majority of the events occurring between 2015 and 2020, especially in battles and violence against civilian event types. In the events of riots, Indonesia makes up a larger proportion.\
+-  ![Figure 67](image67.png)
+-  ![Figure 68](image68.png)
+-  ![Figure 69](image69.png)
+-  ![Figure 70](image70.png)
+-  ![Figure 71](image71.png)
+-  ![Figure 72](image72.png)
