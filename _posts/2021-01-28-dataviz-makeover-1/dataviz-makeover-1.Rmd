@@ -34,7 +34,6 @@ knitr::include_graphics("problems.png")
 ```{r include=FALSE}
 library(dplyr)
 library(kableExtra)
-library(pander)
 ```
 
 ## **1.1 Clarity**
@@ -114,7 +113,6 @@ kable(worksheet, format='html', align='l') %>%
   column_spec(3, width_min='30em') %>%
   row_spec(c(1,4),extra_css = "border-bottom: 2px solid") %>%
   kable_styling(latex_options="scale_up")
-pander(worksheet)
 ```
 
 

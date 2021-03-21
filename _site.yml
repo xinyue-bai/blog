@@ -1,6 +1,5 @@
 name: "Blog"
 title: "Xinyue's Blog"
-base_url: https://flamboyant-meninsky-d13fd9.netlify.app/
 description: |
   Hi! This is Xinyue (Thea)!
 output_dir: "_site"
@@ -14,6 +13,8 @@ navbar:
           href: posts/2021-01-28-dataviz-makeover-1/index.html
         - text: "DataViz Makeover 2"
           href: posts/2021-02-19-dataviz-makeover-2/index.html
+        - text: "DataViz Makeover 3"
+          href: posts/2021-03-21-dataviz-makeover-3/index.html
     - text: "Visual Analytics Project"
       href: vap.html
     - text: "About"
