@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ## 1. Overview
 Data visualization is the graphical representation of information and data. It has been an important factor in data analytics and decision making process, as it can reveal insights that are often difficult to be delivered in other forms. Therefore,understanding the current state of data visualization is crucial. It gives organizations and practitioners in the field a comprehensive picture of where data visualization stands today. Also, it provides people who have an interest in data visualization with a better understanding of the field.
 
-In this session, the focus is on cluster analysis. The aim is to explore patterns and similarities of people involving in the data visualisation field, using a survey that was conducted in 2019 with 1700 participants and has 50+ questions.
+In this sub-modulo, the focus is on cluster analysis. The aim is to find appropriate visualisation for exploring patterns and similarities in respondents, using a survey that was conducted in 2019 with 1700 participants and has 50+ questions.
 
 ## 2. Data Wrangling
 ### 2.1 Install and load R packages
@@ -85,16 +85,116 @@ for(p in packages){
 
 ![](image6.png){width=110%}
 
+-  example of one-hot encoding columns
+
+![](image8.png){width=110%}
+
 -  remaining columns
 
 ![](image7.png){width=110%}
 
-## 3. Visualisation exploration
+## 3. Visualisation prototype
 ```{r, echo=TRUE, eval=TRUE}
+# import processed dataset
 survey <- read_csv("data_visualization_survey-master/data/processed_survey.csv")
 survey <- survey[,2:ncol(survey)]
 survey
+# column information
 col_list <- colnames(survey)
 col_list
 ```
 
+### 3.1 Parallel Sets 
+
+Since this is a survey data, columns in the dataset all have categorical variables. It's not appropriate to use clustering techniques such as dendrogram and k-means clustering method. Therefore, Parallel Set chart, which is compatible with categorical data, is taken into considerations in this case. The width of polylines indicate the frequency of how often each category occur and the width of bar reflects the percentage of each response. The code below is an example of examining the relationship between the usage of different tools and role of respondents. 
+
+Use **geom_parallel_sets**, **geom_parallel_sets_axes**, **geom_parallel_sets_labels** to plot the Parallel sets
+
+```{r, echo=TRUE, eval=FALSE}
+# group by all the tools 
+selected_tool <- c(col_list[2], col_list[10:25])
+tool <- survey %>% group_by(survey[selected_tool]) %>%
+summarise(freq = n()) 
+
+# gather the data.frame into long form
+tool <- gather_set_data(tool, 1:17)
+
+# plot parallel set, Role of respondents are used to fill 
+ggplot(tool, aes(x, id = id, split = y, value = freq)) + 
+geom_parallel_sets(aes(fill = `Role`), alpha = 0.3, axis.width = 0.2) +
+geom_parallel_sets_axes(axis.width = 0.2) +
+geom_parallel_sets_labels(colour = 'orangered1', angle=360, size = 3) +
+theme(axis.text.x = element_text(face="bold", angle = 90, size=14))
+```
+![](image9.png){width=110%}
+
+As we can see from the parallel chart, **Designer**, **Developer**, **Engineer**, **Leadership**, **Other** and **Scientist** show similar trend across the usage of tools 'ArcGIS', 'D3', 'Excel', 'ggplot2', 'Illustrator', 'Leaflet', 'Mapbox', 'Matplotlib', 'Pen&Paper', 'Plotly' and 'Python'. The result of **Analyst** category is quite distinctive, compared to other categories. Analyst respondents don't use majority of tools listed, except for Excel, R and Tableau. Besides, percentage of Academic respondents is relatively small, but their responses are very interesting. As shown in the chart, the majority of Academic respondents don't use any of the tool listed in the survey. Based on this parallel chart, we can roughly summarise the data into 3-4 groups.
+
+Similarly, let's take a look of the relationship between different charts used in production in the last 6 months and role of respondents.
+
+```{r, echo=TRUE, eval=FALSE}
+# group by all the charts used
+selected_chart <- c(col_list[2], col_list[26:40])
+chart <- survey %>% group_by(survey[selected_chart]) %>%
+summarise(freq = n())
+
+# gather the data.frame into long form
+chart <- gather_set_data(chart, 1:16)
+
+# plot parallel set
+ggplot(chart, aes(x, id = id, split = y, value = freq)) + 
+geom_parallel_sets(aes(fill = `Role`), alpha = 0.3, axis.width = 0.2) +
+geom_parallel_sets_axes(axis.width = 0.2) +
+geom_parallel_sets_labels(colour = 'orangered1', angle=360, size = 3) +
+theme(axis.text.x = element_text(face="bold", angle = 90, size=14))
+```
+
+![](image10.png){width=110%}
+
+Again, **Designer**, **Developer**, **Engineer**, **Leadership**, **Other** and **Scientist** behave similarly with respect to the usage of charts. **Academic** respondents don't use majority of the charts, except for 
+'Bar Chart', 'Line Chart' and "Scatter plot".
+
+In general, parallel set charts are informative and useful in finding similarities and patterns of the data. We can incorporate it into our Shiny-based Visual Analytics Application (Shiny-VAA) and add interactivity. Role of respondents is used in the above two examples. For the final application, we can add a selection input, with options including role, yearly pay, educational background, area of organisation, gender and country.  
+
+### 3.2 Coordinate Plot 
+
+Use **ggparcoord** to plot the Coordinate plot
+
+```{r, echo=TRUE, fig.height=10, fig.width=20}
+ggparcoord(data = survey, 
+           columns = c(1:3,6:9), 
+           groupColumn = 13,
+           scale = "uniminmax",
+           showPoints = TRUE,
+           boxplot = TRUE) +
+  theme(axis.text.x = element_text(face="bold", angle = 90, size=14))
+```
+This coordinate plot can also be used to investigate the similarity between groups. However, one drawback is that values of each x variable can't be labeled on the plot, therefore, it's hard to summarise information into groups as you don't know who is who.
+
+```{r, echo=TRUE, fig.height=10, fig.width=20}
+ggparcoord(data = survey, 
+           columns = c(10:25), 
+           groupColumn = 2,
+           scale = "uniminmax",
+           showPoints = TRUE,
+           boxplot = TRUE) +
+  theme(axis.text.x = element_text(face="bold", angle = 90, size=10)) +
+  facet_wrap(~ Role)
+```
+
+Use **parcoords** to plot an interactive parallel coordinates
+
+```{r, echo=TRUE, fig.width=15}
+parcoords(survey[,c(1:3)],
+          rownames = FALSE,
+          reorderable = T,
+          brushMode = '1D-axes')
+```
+
+This plot gets very messy when a variable has multiple values.
+
+## 4. Proposed storyboard for the sub-module.
+
+As discussed in the previous sections, parallel set chart with interactivity is informative, clear and useful, therefore it will be used for this sub-modulo. 
+
+![](image11.png){width=110%}
