@@ -160,7 +160,7 @@ In general, parallel set charts are informative and useful in finding similariti
 
 Use **ggparcoord** to plot the Coordinate plot
 
-```{r, echo=TRUE}
+```{r, echo=TRUE, eval=FALSE}
 ggparcoord(data = survey, 
            columns = c(1:3,6:9), 
            groupColumn = 13,
